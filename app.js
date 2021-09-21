@@ -1,19 +1,20 @@
-// function  missingNumber(numbers)
-// {
-//     var missing = -1;
-//     var sorted = numbers.sort(function(a, b) { return a - b; });
+function  missingNumber(numbers)
+{
+    var missing = -1;
+    var sorted = numbers.sort(function(a, b) { return a - b; });
 
-//     for(var i = sorted[0]; i <= numbers.length -1 ; i++){
-//         if (numbers.indexOf(i) === -1){
-//             missing = i;
-//         }
-//     }
-//     return missing;
-// }
+    for(var i = sorted[0]; i <= numbers.length -1 ; i++){
+        if (numbers.indexOf(i) === -1){
+            missing = i;
+        }
+    }
+    return missing;
+}
 
-// var numbers = [ 1, 2, 3, 4, 8, 9, 10];
+var numbers = [ 1, 2, 3, 4, 8, 9, 10];
 
-// console.log ("The missing number from the array is:", missingNumber(numbers))
+console.log ("The missing number from the array is:", missingNumber(numbers))
+
 var msg = "John's Coding Challenges";
 console.log(msg)
 
